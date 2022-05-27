@@ -1,5 +1,6 @@
 <div class="container">
-  <h2><%= @list.name %></h2>
+  <h2><span>List: </span><%= @list.name %></h2>
+  <%= cl_image_tag @list.photo.key, height: 400, width: 500, crop: :fill %>
     <ol>
       <% @list.bookmarks.each do |bookmark| %>
       <li><h1>Comment:</h1><%= bookmark.comment %></li>
