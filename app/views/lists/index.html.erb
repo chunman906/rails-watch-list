@@ -1,11 +1,13 @@
-<h1>Lists#index</h1>
-<p>Find me in app/views/lists/index.html.erb</p>
-<ul>
-  <% @lists.each do |list| %>
-    <ol><%= link_to "#{list.name}", list %>
-    </ol>
-  <% end %>
-</ul>
-<br>
-<%= link_to "Create the link", new_list_path %>
-<br>
+<div class="container">
+  <h1>Lists#index</h1>
+  <p>Find me in app/views/lists/index.html.erb</p>
+  <ul>
+    <% @lists.each do |list| %>
+      <ol><%= link_to "#{list.name}", list %>
+      </ol>
+    <% end %>
+  </ul>
+  <br>
+  <%= link_to "Create the link", new_list_path %>
+  <br>
+</div>
